@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 41" width="25" height="41">
+	<title>marker-icon</title>
+	<defs>
+		<image  width="25" height="41" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAApCAMAAAD3TXL8AAAAAXNSR0IB2cksfwAAAQJQTFRFTGlxRS0eRS0eSkhITlhfS05RRTAjRzs0RjYsSEE9SEE+SD46RzkxSIy8O4CwNXusR4q6gazK2+fw+vz94OvyjbTPoMHX////tM3f/f7+TU5Qha3Jl7nRkLXNoL/UTU5PY36RRC8hwdXi0d/qRDAjRDAjq8XXuM7dRDAkLWyaQTk0QjcxQzQrQzQrLm2YRC8hRDAkL22YKnGcQDs5QDs4NnOaQTcyQjYwPz08KGuUQTgzQDs5MmmWQTcyQjYvPzw7LmuXKmOcQDs4Lm2XLmyYLWyWQzIoL22XQDo4QDo3LmuXQjUtQDo3QTo2AAD/QDk2LmyXLWyZQzIoLmyXLmyXLmyYFoeLQwAAAFZ0Uk5TAP/M////////////////////////////////////////+f//9en//+MY////+FX//1EG+/oC3dj9E9/8Ddzd+3QJ+25qZv5i+fhb/vf+AfZKzv9C/3nCBQ8dAAABSklEQVR4nHXT2VbCMBAA0Akti23FBbXivmtVBCpFEERxQQUqIPr/v2KapGmaxHma6c2ck2UKwANFAUqgJFLfM9EXwzTNbA4nmVRD3iiQhoKxILThlKylkctywomFxLBikoHUFGxaO5ZtOTS1I+IL84vFpeJyIdk8XsvSldXS2jrLHSJ0t2jDjWIT5ZIeFmUi7haSZZuCu6PILpM9RfaZHHA5jLMjAsdxeQKnfAtnJbd8zqsL8C55cYWuk9wDqCBdVPC93VQ1UKtj8W810giiy25q5I68j9dSoNWmj3qvSJPNQVtu6nTjEXmQpMenqttJwSNvAeiJUH0SZrQvnum5L47vS3IRtdfUYPuN5Ph++l94GzAYvEt/SfDB5DOQBIYjAqOhDBCMiYyVFvxOUVNYVwG+JlgmGgCYhiicagVm3zM9wPxn/o/Ar1j8ATN5HUm7MaVtAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+</svg>

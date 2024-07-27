@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body{
+  background-color: black;
+  font-family: "Quicksand", sans-serif;
+  min-width: 1000px;
+}
+.contain {
+position: relative;
+width: 100%;
+}
+.background_img{
+ position: absolute;
+ min-width: 100%;
+ z-index: -1;
+ opacity: 0.70;
+}
+.background_img img{ 
+  height: 110vh;
+  width:100%;
+}
+.menu{
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+.menu a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+}
+.menu a:hover{
+  font-size: 21px;
+  padding: 18px;
+}
+.menu a img{
+  height: 80px;
+}
+.mid{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  text-align: center;
+  padding-top: 40px;
+}
+.mid h3{
+  color: white;
+  font-size: 30px;
+  width: 450px;
+  font-weight: 500;
+}
+.mid p{
+  margin-top: 10px;
+  color: rgb(192, 190, 190);
+  width: 350px;
+  font-size: 10px;
+  font-weight: 430;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+.button button{
+  margin: 20px;
+  width: 200px;
+  height: 35px;
+  border: none;
+  border-radius: 1px;
+  font-weight: 500;
+}
+.button button:hover{
+  border-radius: 4px;
+  opacity: 0.90;
+}
+.button .left_button{
+  background-color: rgb(204, 133, 2);
+  color: white;
+  margin-left: 30px;
+}
+.button .right_button{
+  color:rgb(204, 133, 2);
+}
+.below{
+  display:flex;
+  justify-content: space-between;
+  align-items:end;
+  margin-top: 50px;
+  font-size: 13px;
+  color: rgb(189, 186, 186);
+  margin: 30px;
+ 
+}
+.social{
+display: flex;
+margin: 2px;
+}
+.social a img{
+  margin: 5px;
+  height: 10px;
+  padding-top: 10px;
+}
+/* secound page style */
+.second_page{
+  position:relative;
+  background-color: rgb(251, 213, 169);
+  width: 100%;
+  height: 100vh;
+}
+.explain{
+  width: 300px;
+  margin-left: 40px;
+}
+.explain h1{
+ color: rgb(69, 45, 30);
+ margin-bottom: 5px;
+ margin-left:10px ;
+
+}
+.explain p{
+  font-size: 15px;
+}
+.product{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.slid_show{
+  margin-top: 20px;
+  display: flex;
+align-items: center;
+justify-content: space-between;
+margin-right: 10px;
+}
+.card{
+  width: 250px;
+  height: 500px;
+  color: white;
+  margin: 5px;
+  background-color: rgb(69, 45, 30);
+  border-radius: 8px;
+}
+
+.card img{
+height: 250px;
+width: 250px;
+border-radius: 2px;
+}
+ .slid_show .card h3,p{
+  padding: 10px;
+}
+.card h3{
+  font-weight: 400;
+}
+.card p{
+  font-size: 15px;
+  font-weight: 100;
+
+}
+.button_design{
+  display: flex;
+  margin-left: 50px;
+  flex-direction: row;
+  align-items: center;
+}
+.button_design button{
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  margin: 10px;
+  outline: none;
+  margin-left: 40px;
+  border: none;
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+  background-color: rgb(69, 45, 30);
+}
+/* thirs page styel */
+.genaral{
+  background-color: white;
+}
+.page{
+
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  padding-top: 150px;
+ 
+}
+.page .text_page{
+  width: 550px;
+}
+.page .text_page h3{
+  color: rgb(69, 45, 30);
+  font-size: 30px;
+}.page .text_page p{
+  color: rgb(136, 135, 135);
+  margin-bottom: 30px;
+}
+.page .text_page h4{
+  font-weight: 600;
+}
+.page .text_page h4 img{
+  padding-right: 5px;
+  height: 13px;
+}
+
+
+.best{
+display: flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+margin-top: 250px;
+
+}
+.best h3{
+  color: rgb(69, 45, 30);
+  font-size: 35px;
+  font-weight: 700;
+  width: 350px;
+  text-align: center;
+}
+.best p{
+  width: 500px;
+  text-align: center;
+  color: rgb(136, 135, 135);
+}
+
+/* four div */
+.four_div{
+  display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+}
+.four{
+  width: 200px;
+  margin: 10px;
+  padding: 35px;
+  height: 300px;
+  border-radius: 2px;
+}
+.four img{
+  margin-bottom: 20px;
+
+}
+.four h3 {
+font-size: 20px;
+font-weight: 600;
+}
+.lunch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.lunch h2{
+  color: rgb(69, 45, 30);
+  font-size: 30px;
+}
+.contact{
+  background-color: rgb(251, 213, 169);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  height: 280px;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+.contact_in{
+  width: 300px;
+}
+.contact_in h3{
+  font-size: 30px;
+}
+.contact_in p{
+  color: rgb(55, 55, 55);
+}
+.last{
+  background-color: rgb(233, 231, 231);
+  display: flex;
+  height: 200px;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 100px;
+  font-weight: 500;
+}
+.last .last_p{
+  width: 290px;
+}
+.last .styel_last{
+display: grid;
+grid-template-columns: repeat(2,200px);
+
+}
+.last .styel_last a{
+text-decoration: none;
+color: black;
+padding: 3px;
+cursor: pointer;
+}
+.last .styel_last a:hover{
+ font-size: 17px;
+  }
+  @media(max-width:600px)
+{
+  body{
+    min-width: 100px;
+  }
+  .product{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+    .slid_show{
+      margin-top: 20px;
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+    .second_page{
+      height: 220vh;
+    }
+ 
+}
+
