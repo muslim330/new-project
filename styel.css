@@ -322,10 +322,12 @@ cursor: pointer;
 .last .styel_last a:hover{
  font-size: 17px;
   }
+
   @media(max-width:600px)
 {
   body{
-    min-width: 100px;
+    min-width:500px;
+    width: 500px;
   }
   .product{
     display: flex;
@@ -342,6 +344,52 @@ cursor: pointer;
     .second_page{
       height: 220vh;
     }
- 
+    .button_design{
+      margin-left: 90px;
+    }
+    .page{
+      flex-direction: column;
+      margin-left: 50px;
+    }
+    .page .text_page{
+      width: 530px;
+      margin-bottom: 80px;
+    }
+    .page .text_page h3{
+      font-size: 25px;
+    }
+    .four_div{
+   flex-direction: column;
+    }
+    .four{
+      width: 250px;
+      margin: 20px;
+      padding: 35px;
+      height: 300px;
+      border-radius: 2px;
+    }
+  
+    .four h3 {
+    font-size: 25px;
+    font-weight: 600;
+    }
+
+    .contact{
+      flex-direction: column;
+      align-items: center;
+      height: 380px;
+      width: 80%;
+      margin: auto;
+      margin-top: 50px;
+    }
+    .contact img{
+      width: 350px;
+    }
+    .last{
+      height: 400px;
+      flex-direction:column;
+      text-align: center;
+      padding: 20px;
+    }
 }
 
