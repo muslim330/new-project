@@ -101,7 +101,7 @@ width: 100%;
   justify-content: space-between;
   align-items:end;
   margin-top: 50px;
-  font-size: 13px;
+  font-size: 20px;
   color: rgb(189, 186, 186);
   margin: 30px;
  
@@ -112,8 +112,18 @@ margin: 2px;
 }
 .social a img{
   margin: 5px;
-  height: 10px;
+  height: 15px;
   padding-top: 10px;
+}
+.get_help{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.question_img{
+  cursor: pointer;
 }
 /* secound page style */
 .second_page{

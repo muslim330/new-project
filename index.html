@@ -6,6 +6,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+      <!-- Demo styles -->
     </head>
     <body>
       <div class="contain">
@@ -43,7 +49,7 @@
                 <a href=""><img src="/images/socials/youtube.png" alt=""></a>
                 </nav>
           <div class="get_help">
-            <p>have a qwestion? get help <img src="/images/icons/comment.png" alt=""></p>
+            <p>have a qwestion? get help</p> <img src="/images/icons/comment.png" class="question_img">
           </div>
         </div>
       </div>
@@ -59,22 +65,24 @@
             </article>
           <div class="slid_show" id="slid_show">
               <article class="card" id="card">
-                <img src="/uploads/f1.jpeg" alt="" id="fimg">
-                <h3 id="f_h3">Das floor</h3>
-                <p id="f_p">is one of the best our product in company,contain benifit things</p>
-              </article>
-              <article class="card">
-                <img src="/uploads/f2.jpeg" alt="" id="simg">
-                <h3 id="s_h3" >fllor das</h3>
-                <p id="s_p">is one of the best our product in company,contain benifit things</p>
-              </article>
-            </div>
-          </div>
-          <div class="button_design" id="button_deign">
-          <button onclick="change('<')" class="button_deign"><</button>
-          <button onclick="change('>')" class="button_deign">></button>
-          
-            </div>
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/uploads/f1.jpeg" alt=""><h3>dass food</h3> <p>we are the best food inkurdistan</p> </div>
+                    <div class="swiper-slide"><img src="/uploads/f2.jpeg" alt=""><h3>dass food</h3> <p>we are the best food inkurdistan</p></div>
+                    <div class="swiper-slide"><img src="/uploads/f3.jpeg" alt=""><h3>dass food</h3> <p>we are the best food inkurdistan</p></div>
+                    <div class="swiper-slide"><img src="/uploads/f4.jpeg" alt=""><h3>dass food</h3> <p>we are the best food inkurdistan</p></div>
+                    <div class="swiper-slide"><img src="/uploads/f5.jpeg" alt=""><h3>dass food</h3> <p>we are the best food inkurdistan</p></div>
+                    <div class="swiper-slide"><img src="/uploads/f6.jpeg" alt=""><h3>dass food</h3> <p>we are the best food inkurdistan</p></div>
+                    <div class="swiper-slide"><img src="/uploads/f1.jpeg" alt=""><h3>dass food</h3> <p>we are the best food inkurdistan</p></div>
+                    <div class="swiper-slide"><img src="/uploads/f2.jpeg" alt=""><h3>dass food</h3> <p>we are the best food inkurdistan</p></div>
+                    <div class="swiper-slide"><img src="/uploads/f3.jpeg" alt=""><h3>dass food</h3> <p>we are the best food inkurdistan</p></div>
+                  </div>
+            <div class="swiper-pagination"></div>
+                </div>
+                </article>  
+           </div>
+           </div>
+           <div class="scroll"> </div>
       </div>
       <!-- thirs page-->
        <div class="genaral">
@@ -134,6 +142,7 @@
       
         <footer>
           <div class="last">
+            <div class="last_contain">
             <div class="last_img">
             <img src="/images/footer-logo.png" alt="">
           </div>
@@ -156,54 +165,24 @@
           <a href=""><img src="/images/socials/insta-dark.png" alt=""></a>
           <a href=""><img src="/images/socials/twitter-dark.png" alt=""></a>
           <a href=""><img src="/images/socials/youtube-dark.png" alt=""></a>
-          </nav></div>
+          </nav></div></div>
         </footer>
       </div>
-
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script> 
-        var x=1;
-         var first=document.getElementById('fimg');
-         var second=document.getElementById('simg');
-         var first_h3=document.getElementById('f_h3');
-         var second_h3=document.getElementById('s_h3');
-         var first_text=document.getElementById('f_text');
-         var second_text=document.getElementById('s_text');
-      
-         function change(e){
-          if(e=='>'){
-          if(x<3)
-          x++;
-        }
-        else{ if(x>1) 
-          x--;
-        }
-         display(x);
-         }
-         function display(x){;
-          switch(x){
-            case 1:first.src="/uploads/f1.jpeg";
-            second.src='/uploads/f2.jpeg';
-            first_h3.innerHTML="Das Floor";
-            first_text.innerHTML="is one of the best our product in company,contain benifit things";
-            second_h3.innerHTML="floor das";
-            second_text.innerText="is one of the best our product in company,contain benifit thing";
-            break;
-            case 2:first.src='/uploads/f3.jpeg';
-            second.src='/uploads/f4.jpeg';
-            first_h3.innerHTM="Das Floor";
-            first_text.innerHTM="is one of the best our product in company,contain benifit things";
-            second_h3.innerHTM="floor das";
-            second_text.innerText=" our product in company,contain benifit thing";
-            break;
-            case 3:first.src='/uploads/f5.jpeg';
-            second.src='/uploads/f6.jpeg';
-            first_h3.innerHTM=" Floor";
-            first_text.innerHTM=" best our product in company,contain benifit things";
-            second_h3.innerHTM="floor das";
-            second_text.innerHTM="is one of other tyep of our product";
-            break;
-          }
-         }
+        var menu = ['', '', '','', '', '','', '', ''];
+         var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2.5,
+            spaceBetween: 15,
+            freeMode: true,
+            pagination: {
+              el: ".scroll",
+              clickable: true,
+            },
+            renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        },
+          });
         function left(){
           window.scrollTo({top:610,behavior:"smooth"});
         }
