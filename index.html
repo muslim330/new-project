@@ -10,8 +10,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
       <!-- Link Swiper's CSS -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
-      <!-- Demo styles -->
     </head>
     <body>
       <div class="contain">
@@ -40,9 +38,8 @@
                 <button class="left_button" onclick="left()">Our product</button>
                 <button class="right_button">Learn more</button>
         </div>
-        <div class="below">
-                <nav class="social">
-                  <p>follow us  : </p>
+        <div class="below">  
+                <nav class="social"><p>follow us  : </p>
                 <a href=""><img src="/images/socials/facebook.png" alt=""></a>
                 <a href=""><img src="/images/socials/insta.png" alt=""></a>
                 <a href=""><img src="/images/socials/twitter.png" alt=""></a>
@@ -77,9 +74,11 @@
                     <div class="swiper-slide"><img src="/uploads/f2.jpeg" alt=""><h3>dass food</h3> <p>we are the best food inkurdistan</p></div>
                     <div class="swiper-slide"><img src="/uploads/f3.jpeg" alt=""><h3>dass food</h3> <p>we are the best food inkurdistan</p></div>
                   </div>
-            <div class="swiper-pagination"></div>
+           
                 </div>
-                </article>  
+                </article>
+                   <div class="swiper-pagination"></div>
+                 
            </div>
            </div>
            <div class="scroll"> </div>
@@ -169,6 +168,7 @@
         </footer>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
       <script> 
         var menu = ['', '', '','', '', '','', '', ''];
          var swiper = new Swiper(".mySwiper", {
@@ -176,12 +176,13 @@
             spaceBetween: 15,
             freeMode: true,
             pagination: {
-              el: ".scroll",
+              el: ".swiper-pagination",
               clickable: true,
-            },
+            
             renderBullet: function (index, className) {
           return '<span class="' + className + '">' + (menu[index]) + '</span>';
-        },
+            },
+           },
           });
         function left(){
           window.scrollTo({top:610,behavior:"smooth"});

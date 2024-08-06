@@ -107,6 +107,7 @@ width: 100%;
  max-width: 1200px;
  margin: auto; 
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 .social{
 display: flex;
@@ -115,7 +116,7 @@ margin: 2px;
 .social a img{
   margin: 5px;
   height: 15px;
-  padding-top: 10px;
+  padding-top: -10px;
 }
 .get_help{
   display: flex;
@@ -170,7 +171,7 @@ height: 500px;
   justify-content: center;
   align-items: center;
   background-color: rgb(69, 45, 30) ;
-
+  
 }
 
 .swiper-slide img {
@@ -192,9 +193,6 @@ height: 500px;
   margin: 5px;
   margin-top: 10px;
 }
-.swiper-pagination{
-visibility: hidden;
-}
 .slid_show{
   margin-top: 20px;
 }
@@ -206,28 +204,31 @@ visibility: hidden;
   background-color: rgb(251, 213, 169);
   border-radius: 8px;
 }
-.scroll {
-  position:absolute;
+.swiper-pagination {
+	position: absolute;
+	top: 10px;
 	width: auto !important;
-	left: 80px !important;
-	margin: 20px;
+	left: 100px !important;
+	margin: 0;
+  margin-bottom: 20px;
 }
-.scroll-bullet {
-	padding: 5px 10px;
-	border-radius:0;
-  width: 200px;
-	height: 50px;
+.swiper-pagination-bullet {
+	padding: 3px 3px;
+	border-radius: 0px;
+	width: 20pxpx;
+	height: 3px;
 	text-align: center;
 	line-height: 30px;
-	font-size: 200px;
-	color:#000;
+	font-size: 2px;
+	color:#ff0000;
 	opacity: 1;
 	background: rgba(0,0,0,0.2);
 }
-.scroll-bullet-active {
+.swiper-pagination-bullet-active {
 	color:#fff;
-	background: #007aff;
+	background: #ffa600;
 }
+
 /* thirs page styel */
 .genaral{
   background-color: white;
