@@ -100,11 +100,13 @@ width: 100%;
   display:flex;
   justify-content: space-between;
   align-items:end;
-  margin-top: 50px;
+
   font-size: 20px;
   color: rgb(189, 186, 186);
   margin: 30px;
- 
+ max-width: 1200px;
+ margin: auto; 
+  margin-top: 50px;
 }
 .social{
 display: flex;
@@ -126,11 +128,19 @@ margin: 2px;
   cursor: pointer;
 }
 /* secound page style */
+.product{
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: 1200px;
+margin: auto;
+height: 500px;
+}
 .second_page{
   position:relative;
   background-color: rgb(251, 213, 169);
   width: 100%;
-  height: 100vh;
+  height:auto;
 }
 .explain{
   width: 300px;
@@ -145,65 +155,83 @@ margin: 2px;
 .explain p{
   font-size: 15px;
 }
-.product{
-display: flex;
-align-items: center;
-justify-content: space-between;
+
+.swiper {
+  width: 550px;
+  height: 90%;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(69, 45, 30) ;
+
+}
+
+.swiper-slide img {
+  display: block;
+  width:212px ;
+  height: 200px;
+  object-fit: cover;
+}
+.swiper-slide h3 {
+  text-align: left;
+  font-weight: 500;
+  margin: 5px;
+    margin-top: 20px;
+}
+.swiper-slide p {
+  margin-top: 20px;
+  text-align: left;
+  font-weight: 300;
+  margin: 5px;
+  margin-top: 10px;
+}
+.swiper-pagination{
+visibility: hidden;
 }
 .slid_show{
   margin-top: 20px;
-  display: flex;
-align-items: center;
-justify-content: space-between;
-margin-right: 10px;
 }
 .card{
-  width: 250px;
-  height: 500px;
+  margin-right: -50px;
+  width: 610px;
+  height: 400px;
   color: white;
-  margin: 5px;
-  background-color: rgb(69, 45, 30);
+  background-color: rgb(251, 213, 169);
   border-radius: 8px;
 }
-
-.card img{
-height: 250px;
-width: 250px;
-border-radius: 2px;
+.scroll {
+  position:absolute;
+	width: auto !important;
+	left: 80px !important;
+	margin: 20px;
 }
- .slid_show .card h3,p{
-  padding: 10px;
+.scroll-bullet {
+	padding: 5px 10px;
+	border-radius:0;
+  width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 200px;
+	color:#000;
+	opacity: 1;
+	background: rgba(0,0,0,0.2);
 }
-.card h3{
-  font-weight: 400;
-}
-.card p{
-  font-size: 15px;
-  font-weight: 100;
-
-}
-.button_design{
-  display: flex;
-  margin-left: 50px;
-  flex-direction: row;
-  align-items: center;
-}
-.button_design button{
-  height: 40px;
-  width: 80px;
-  border-radius: 5px;
-  margin: 10px;
-  outline: none;
-  margin-left: 40px;
-  border: none;
-  font-size: 20px;
-  font-weight: 100;
-  color: white;
-  background-color: rgb(69, 45, 30);
+.scroll-bullet-active {
+	color:#fff;
+	background: #007aff;
 }
 /* thirs page styel */
 .genaral{
   background-color: white;
+ 
 }
 .page{
 
@@ -211,7 +239,8 @@ border-radius: 2px;
   align-items: center;
   justify-content:space-around;
   padding-top: 150px;
- 
+  max-width: 1200px;
+  margin: auto;
 }
 .page .text_page{
   width: 550px;
@@ -295,6 +324,7 @@ font-weight: 600;
   width: 80%;
   margin: auto;
   margin-top: 50px;
+  max-width: 1200px;
 }
 .contact_in{
   width: 300px;
@@ -307,29 +337,36 @@ font-weight: 600;
 }
 .last{
   background-color: rgb(233, 231, 231);
+
+}
+.last_contain{
   display: flex;
   height: 200px;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-  margin-top: 100px;
   font-weight: 500;
+  margin-top: 100px;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
 }
-.last .last_p{
+
+.last_contain .last_p{
   width: 290px;
 }
-.last .styel_last{
+.last_contain .styel_last{
 display: grid;
 grid-template-columns: repeat(2,200px);
 
 }
-.last .styel_last a{
+.last_contain .styel_last a{
 text-decoration: none;
 color: black;
 padding: 3px;
 cursor: pointer;
 }
-.last .styel_last a:hover{
+.last_contain .styel_last a:hover{
  font-size: 17px;
   }
 
